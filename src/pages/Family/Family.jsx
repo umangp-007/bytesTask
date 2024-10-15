@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Home from '../Home/Home'
 const Family = () => {
   return (
-    <div>Family</div>
+    <>
+    <Home />
+    </>
   )
 }
 
