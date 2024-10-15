@@ -1,0 +1,28 @@
+.app-layout {
+  display: flex;
+}
+
+.left-side-menu {
+  width: 200px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 200px;
+  width: calc(100% - 600px);
+  background: #FAF6F2;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+
+.events-container{
+  padding: 20px;
+  background: #FAF6F2;
+  width: 400px;
+}

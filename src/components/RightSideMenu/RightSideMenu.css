@@ -1,0 +1,147 @@
+.card-title-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .card-title{
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .view-all{
+        color: #15AD4D;
+    }
+}
+
+.approvals-container{
+    .approval-item {
+        display: flex;
+        gap: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #D2D4D6;
+
+        .btn-action-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: start;
+
+            .action-btn{
+                padding: 9px;
+                background: #F2F2F5;
+                display: flex;
+                cursor: pointer;
+
+                &.reject{
+                    border-right: 1px solid #D2D4D6;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+
+                    &.active{
+                        background: #E83535;
+
+                        svg{
+                            path{
+                                stroke: white;
+                            }
+                        }
+                    }
+                }
+
+                &.accept{
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+
+                    &.active{
+                        background: #25D366;
+
+                        svg{
+                            path{
+                                stroke: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .approval-detail{
+            font-size: 14px;
+            line-height: 20px;
+
+            .name{
+                font-weight: 500;
+            }
+        }
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.upcoming-events-container{
+    .upcoming-event-item {
+        display: flex;
+        gap: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #D2D4D6;
+        width: 100%;
+
+        .date-item{
+            background: #F2F2F5;
+            border-radius: 8px;
+            height: 64px;
+            width: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: 500;
+
+            .date{
+                font-weight: 600;
+            }
+        }
+
+        .event-detail{
+            .event-name{
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+
+            .event-time{
+                font-size: 14px;
+                line-height: 22px;
+                color: #424245;
+            }
+
+            .event-organizer{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-top: 4px;
+
+                .name{
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}
